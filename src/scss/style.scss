@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 20px;
     line-height: 1;
     font-weight: 400;
@@ -134,6 +134,127 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+}
+
+.header {
+    padding: 15px 0 15px 0;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    img {
+        max-width: 150px;
+        width: 100%;
+    }
+    span {
+        display: block;
+        max-width: 200px;
+        width: 100%;
+        margin-left: 5px;
+        font-size: 14px;
+        color: #000;
+    }
+}
+
+.address {
+    font-size: 14px;
+    color: #000;
+}
+
+.tel {
+    font-size: 14px;
+    color: #000;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li {}
+    a {
+        position: relative;
+        font-size: 15px;
+        color: #000;
+        text-transform: uppercase;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background: #85BC23;
+            bottom: -4px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transition: width .3s ease-in-out;
+        }
+        &:hover {
+            background: linear-gradient(180deg, #0979C6 20%, #85BC23 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background: #0979C6;
+            top: -4px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transition: width .3s ease-in-out;
+        }
+        &:hover::before,
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soc {
+    margin: 0 5px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.vk {
+    background: url(../img/vk.svg) no-repeat center;
+}
+
+.vk:hover {
+    background: url(../img/vk-hover.svg) no-repeat center;
+}
+
+.inst {
+    background: url(../img/inst.svg) no-repeat center;
+}
+
+.inst:hover {
+    background: url(../img/inst-hover.svg) no-repeat center;
 }
 
 
@@ -302,7 +423,10 @@ select {
 
 .modal.show .modal-dialog {
     -webkit-transform: none;
-    transform: none
+    transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
 }
 
 .modal-close {
