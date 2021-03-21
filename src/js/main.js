@@ -1,5 +1,7 @@
 $(function() {
 
+    $('.decor1, .decor2').addClass('load');
+
     $('#hamburger-icon').click(function() {
         $(this).toggleClass('active');
         if ($(this).hasClass('active')) {

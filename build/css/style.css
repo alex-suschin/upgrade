@@ -135,6 +135,154 @@ img {
 .wrapper {
   position: relative; }
 
+.decor1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 350px;
+  height: 50px;
+  width: 100%; }
+  .decor1 span:first-child {
+    position: absolute;
+    left: 0;
+    top: 0%;
+    display: block;
+    height: 3px;
+    width: 0;
+    background: #0979C6;
+    transition: all .8s ease-in-out;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out; }
+  .decor1 span:last-child {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #85BC23;
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out; }
+  .decor1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: block;
+    height: 3px;
+    width: 0;
+    background: #0979C6;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out; }
+  .decor1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 75%;
+    display: block;
+    height: 3px;
+    width: 0;
+    background: #85BC23;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out; }
+
+.decor1.load span:first-child {
+  width: 100%; }
+
+.decor1.load span:last-child {
+  width: 75%; }
+
+.decor1.load::before {
+  width: 50%; }
+
+.decor1.load::after {
+  width: 25%; }
+
+.decor2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 350px;
+  height: 50px;
+  width: 100%; }
+  .decor2 span:first-child {
+    position: absolute;
+    right: 0;
+    top: 25%;
+    display: block;
+    height: 3px;
+    width: 0;
+    background: #85BC23;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out; }
+  .decor2 span:last-child {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    display: block;
+    height: 3px;
+    width: 0;
+    background: #0979C6;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out; }
+  .decor2::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 75%;
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #85BC23;
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out; }
+  .decor2::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 100%;
+    display: block;
+    height: 3px;
+    width: 0;
+    background: #0979C6;
+    transition: all .8s ease-in-out;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out; }
+
+.decor2.load span:first-child {
+  width: 25%; }
+
+.decor2.load span:last-child {
+  width: 50%; }
+
+.decor2.load::before {
+  width: 75%; }
+
+.decor2.load::after {
+  width: 100%; }
+
 input:not([type=checkbox]):not([type=radio]),
 textarea,
 select {
@@ -191,6 +339,18 @@ select {
   color: #000;
   background: url(../img/phone.svg) no-repeat left center;
   padding: 0 0 0 25px;
+  background-size: contain; }
+
+.mail {
+  font-size: 14px;
+  color: #000;
+  background: url(../img/mail.svg) no-repeat left center;
+  padding: 0 0 0 25px;
+  background-size: contain; }
+
+.mail:hover {
+  color: #85BC23;
+  background: url(../img/mail-hover.svg) no-repeat left center;
   background-size: contain; }
 
 .tel:hover {
