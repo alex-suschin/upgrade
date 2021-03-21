@@ -292,6 +292,131 @@ img {
     }
 }
 
+.ico-main {
+    position: absolute;
+    width: 50px;
+}
+
+.ico-anim-1 {
+    top: 15%;
+    left: 10%;
+    animation-name: amim-top-bottom;
+    -webkit-animation-name: amim-top-bottom;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    z-index: -1;
+}
+
+.ico-anim-2 {
+    top: 45%;
+    left: 15%;
+    animation-name: amim-left-right;
+    -webkit-animation-name: amim-left-right;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    z-index: -1;
+}
+
+.ico-anim-5 {
+    top: 75%;
+    left: 5%;
+    animation-name: amim-top-bottom;
+    -webkit-animation-name: amim-top-bottom;
+    animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    z-index: -1;
+}
+
+.ico-anim-3 {
+    top: 15%;
+    right: 5%;
+    animation-name: amim-left-right;
+    -webkit-animation-name: amim-left-right;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    z-index: -1;
+}
+
+.ico-anim-6 {
+    top: 45%;
+    right: 15%;
+    animation-name: amim-top-bottom;
+    -webkit-animation-name: amim-top-bottom;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    z-index: -1;
+}
+
+.ico-anim-4 {
+    top: 75%;
+    right: 5%;
+    animation-name: amim-left-right;
+    -webkit-animation-name: amim-left-right;
+    animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    z-index: -1;
+}
+
+@keyframes amim-top-bottom {
+    0% {
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(20%);
+        -webkit-transform: translateY(20%);
+        -moz-transform: translateY(20%);
+        -ms-transform: translateY(20%);
+        -o-transform: translateY(20%);
+    }
+    100% {
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+    }
+}
+
+@keyframes amim-left-right {
+    0% {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(20%);
+        -webkit-transform: translateX(20%);
+        -moz-transform: translateX(20%);
+        -ms-transform: translateX(20%);
+        -o-transform: translateX(20%);
+    }
+    100% {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+}
+
 input:not([type=checkbox]):not([type=radio]),
 textarea,
 select {
