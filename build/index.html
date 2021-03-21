@@ -113,10 +113,22 @@
         </div>
         <div class="footer-bottom">
             <div class="copyright">2021 © Сервисный центр "Апгрейд Брянск"</div>
-            <a href="javascript:void(0);" class="btn-callback">Заказать звонок</a>
+            <a href="javascript:void(0);" data-toggle="modal" data-target="#modal" class="btn-callback">Заказать звонок</a>
         </div>
     </div>
 </footer>
+
+<div class="modal fade" id="modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-close" data-dismiss="modal"></div>
+            <form class="form-popup" action="/" method="POST">
+                <div class="title">Оставьте заявку</div>
+                <div class="desc">И мы перезвоним Вам в ближайшее время</div><span><input type="text" placeholder="Ваше имя" /></span><span><input type="tel" placeholder="Телефон" /></span><button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
     </div>
 
     <script src="js/vendor.min.js"></script>
